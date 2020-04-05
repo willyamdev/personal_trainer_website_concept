@@ -1,0 +1,96 @@
+@import url("navbar.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+#content {
+  display: flex;
+  height: calc(100vh - 75px);
+}
+#content .content-item {
+  flex-basis: 50%;
+}
+#content .content-item:nth-child(2) {
+  position: relative;
+}
+#content .content-item:nth-child(2) img {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+}
+#content .content-item:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+#content .content-item h2 {
+  font-weight: bold;
+  font-size: 60px;
+}
+#content .content-item p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+#content .content-item button {
+  margin-top: 20px;
+  width: 30%;
+  background-color: #050228;
+  height: 55px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav {
+  height: 75px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+}
+nav button {
+  background-color: #050228;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav button:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=navbar.css.map */

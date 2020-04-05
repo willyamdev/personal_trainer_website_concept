@@ -1,0 +1,30 @@
+@use 'global.scss' as global;
+
+$marginMenuItens:30px;
+
+nav {
+    height: 75px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        margin-right: $marginMenuItens;
+        color: black;
+    }
+
+    button{
+        background-color: global.$primaryColor;
+        padding: 15px 30px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:focus{
+        outline: 0;
+    }
+}
