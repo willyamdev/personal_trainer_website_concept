@@ -1,6 +1,5 @@
-@use 'global.scss' as global;
-
 $marginMenuItens:30px;
+$primaryColor:#050228;
 
 nav {
     height: 75px;
@@ -16,7 +15,7 @@ nav {
     }
 
     button{
-        background-color: global.$primaryColor;
+        background-color: $primaryColor;
         padding: 15px 30px;
         color: white;
         border: none;

@@ -1,4 +1,5 @@
 @import url("navbar.css");
+@import url("responsiveness.css");
 
 $primaryColor:#050228;
 $secondaryColor:#281DCB;
@@ -30,44 +31,42 @@ h6 {
     font-weight: normal;
 }
 
-#content{
+#content {
     display: flex;
     height: calc(100vh - 75px);
 
-    .content-item{
+    .content-item {
         flex-basis: 50%;
     }
-    
-    .content-item:nth-child(2){
+
+    .content-item:nth-child(2) {
         position: relative;
 
-        img{
-            position: absolute;
+        img {
             width: 400px;
             bottom: 0;
         }
     }
 
-    .content-item:nth-child(1){
+    .content-item:nth-child(1) {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-left: 20px;
     }
 
-    .content-item h2{
+    .content-item h2 {
         font-weight: bold;
         font-size: 60px;
     }
 
-    .content-item p{
+    .content-item p {
         margin-top: 10px;
         font-size: 20px;
         text-align: justify;
     }
 
-    .content-item button{
+    .content-item button {
         margin-top: 20px;
         width: 30%;
         background-color: $primaryColor;
